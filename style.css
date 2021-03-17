@@ -1,14 +1,15 @@
+
 #navbar{
     background-color: gray;
     display: flex;
     height: 790px;
+    width: 150px;
     justify-content: center;
     align-items: center;
-    width: 10%;
 }
 #container{
     display: flex;
-    height: 790px;
+    height: 690px;
     justify-content: space-between;
 }
 header{
@@ -22,8 +23,42 @@ header{
 #aside{
     background-color: red;
     display: flex;
-    height: 790px;
-    width: 10%;
+    height: 690px;
+    width: 150px;
     justify-content: center;
     align-items: center;
 }
+footer{
+    background-color: teal;
+    display: flex;
+    height: 100px;
+    align-items: center;
+    justify-content: center;
+}
+#article
+{
+    display: flex;
+    background-color: yellowgreen;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+@media only screen and (max-width:500px){
+    #container{
+        display: inline-flex;
+        flex-direction: column;
+        width: 100%;
+    }
+    #aside{
+        height: 200px;
+        width: 100%;
+    }
+    #navbar{
+        height: 200px;
+        width: 100%;
+    }
+    #article{
+        height: 100%;
+    }
+}
+    
